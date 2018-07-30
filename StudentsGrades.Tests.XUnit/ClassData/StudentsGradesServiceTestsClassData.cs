@@ -34,6 +34,16 @@ namespace StudentsGrades.Tests.XUnit.ClassData
                     new Grade{Value = 1.75M,Weight = 1},
                 },
                 2.0833M
+            },
+            new object[]
+            {
+                new List<Grade>
+                {
+                    new Grade{Value = 2.75M,Weight = 1},
+                    new Grade{Value = 2.75M,Weight = 1},
+                    new Grade{Value = 2.75M,Weight = 1},
+                },
+                2.75M
             }
         };
 
