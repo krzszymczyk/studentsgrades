@@ -7,9 +7,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StudentsGrades", "StudentsG
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{A6A3DE7F-75D1-4CD8-9E3B-2CFB913B42ED}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudentsGrades.Tests.MsTest", "StudentsGrades.Tests\StudentsGrades.Tests.MsTest.csproj", "{F47C27C9-D023-4194-A69F-D4967943A9CB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StudentsGrades.Tests.MsTest", "StudentsGrades.Tests\StudentsGrades.Tests.MsTest.csproj", "{F47C27C9-D023-4194-A69F-D4967943A9CB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudentsGrades.Tests.XUnit", "StudentsGrades.Tests.XUnit\StudentsGrades.Tests.XUnit.csproj", "{61DFFF8B-CFC4-4DAA-9DAD-9602C1A4B908}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StudentsGrades.Tests.XUnit", "StudentsGrades.Tests.XUnit\StudentsGrades.Tests.XUnit.csproj", "{61DFFF8B-CFC4-4DAA-9DAD-9602C1A4B908}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StudentsGrades.Tests.Nunit.Cmd", "StudentsGrades.Tests.Nunit.Cmd\StudentsGrades.Tests.Nunit.Cmd.csproj", "{3F57A106-5D3F-418C-A52A-FEF42719265D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -29,6 +31,10 @@ Global
 		{61DFFF8B-CFC4-4DAA-9DAD-9602C1A4B908}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{61DFFF8B-CFC4-4DAA-9DAD-9602C1A4B908}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{61DFFF8B-CFC4-4DAA-9DAD-9602C1A4B908}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F57A106-5D3F-418C-A52A-FEF42719265D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F57A106-5D3F-418C-A52A-FEF42719265D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F57A106-5D3F-418C-A52A-FEF42719265D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F57A106-5D3F-418C-A52A-FEF42719265D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -36,6 +42,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{F47C27C9-D023-4194-A69F-D4967943A9CB} = {A6A3DE7F-75D1-4CD8-9E3B-2CFB913B42ED}
 		{61DFFF8B-CFC4-4DAA-9DAD-9602C1A4B908} = {A6A3DE7F-75D1-4CD8-9E3B-2CFB913B42ED}
+		{3F57A106-5D3F-418C-A52A-FEF42719265D} = {A6A3DE7F-75D1-4CD8-9E3B-2CFB913B42ED}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1BB44CC0-917E-470C-978D-32B4E86B2836}
