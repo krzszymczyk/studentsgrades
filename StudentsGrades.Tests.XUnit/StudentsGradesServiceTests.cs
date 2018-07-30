@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using StudentsGrades.Models;
 using StudentsGrades.Services;
+using StudentsGrades.Tests.XUnit.ClassData;
 using Xunit;
 
 namespace StudentsGrades.Tests.XUnit
@@ -19,7 +20,14 @@ namespace StudentsGrades.Tests.XUnit
         }
 
         #endregion
+        [Theory]
+        [ClassData(typeof(StudentsGradesServiceTestsClassData))]
+        public void Calculate_Should_Return_Correct_Statuses(List<Grade> gradesList,decimal expectedResult)
+        {
+            var result = serviceUnderTests.Calculate(gradesList);
 
+            Assert.Equal(expectedResult, result);
+        }
         [Fact]
         public void Calculate_Should_Return_Correct_Result()
         {
