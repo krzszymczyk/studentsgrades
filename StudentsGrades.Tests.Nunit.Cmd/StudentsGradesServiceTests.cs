@@ -3,7 +3,7 @@ using NUnit.Framework;
 using StudentsGrades.Models;
 using StudentsGrades.Services;
 
-namespace Tests
+namespace StudentsGrades.Tests.Nunit.Cmd
 {
     
     public class StudentsGradesServiceTests
