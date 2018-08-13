@@ -8,11 +8,11 @@ namespace StudentsGrades.Services
 {
     public class StudentsFinalRatingService
     {
-        private StudentGradesAverageService studentsGradesAverageService;
+        private IStudentGradesAverageService studentsGradesAverageService;
 
-        public StudentsFinalRatingService()
+        public StudentsFinalRatingService(IStudentGradesAverageService service)
         {
-            this.studentsGradesAverageService = new StudentGradesAverageService();
+            this.studentsGradesAverageService = service;
         }
         public int GetFinalRating(List<Grade> grades)
         {
