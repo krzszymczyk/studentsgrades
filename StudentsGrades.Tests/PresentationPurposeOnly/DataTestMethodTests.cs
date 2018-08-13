@@ -14,7 +14,7 @@ namespace StudentsGrades.Tests.MsTest.PresentationPurposeOnly
         [DataRow(5,6)]
         public void DataRowExample(int a, int b)
         {
-            Assert.AreEqual(a,b);
+            Assert.AreNotEqual(a,b);
         }
     }
 }

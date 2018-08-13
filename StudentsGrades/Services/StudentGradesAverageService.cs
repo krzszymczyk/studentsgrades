@@ -5,7 +5,7 @@ using StudentsGrades.Models;
 
 namespace StudentsGrades.Services
 {
-    public class StudentGradesService
+    public class StudentGradesAverageService
     {
         public decimal Calculate(IEnumerable<Grade> grades)
         {

@@ -10,11 +10,11 @@ namespace StudentsGrades.Tests.MsTest
     {
         #region Configuration
 
-        StudentGradesService serviceUnderTests;
+        StudentGradesAverageService _averageServiceUnderTests;
 
         public StudentsGradesServiceTests()
         {
-            serviceUnderTests = new StudentGradesService();
+            _averageServiceUnderTests = new StudentGradesAverageService();
         }
 
         #endregion
@@ -29,7 +29,7 @@ namespace StudentsGrades.Tests.MsTest
                 new Grade {Value = 2.75M, Weight = 1}
             };
 
-            var result = serviceUnderTests.Calculate(list);
+            var result = _averageServiceUnderTests.Calculate(list);
 
             Assert.AreEqual(2.4167M,result);
         }
@@ -44,7 +44,7 @@ namespace StudentsGrades.Tests.MsTest
                 new Grade {Value = 1.75M, Weight = 1}
             };
 
-            var result = serviceUnderTests.Calculate(list);
+            var result = _averageServiceUnderTests.Calculate(list);
 
             Assert.AreEqual(2.0833M, result);
         }
@@ -58,7 +58,7 @@ namespace StudentsGrades.Tests.MsTest
                 new Grade {Value = 4, Weight = 3}
             };
 
-            var result = serviceUnderTests.Calculate(list);
+            var result = _averageServiceUnderTests.Calculate(list);
 
             Assert.AreEqual(4.4M, result);
         }

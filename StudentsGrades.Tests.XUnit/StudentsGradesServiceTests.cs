@@ -12,11 +12,11 @@ namespace StudentsGrades.Tests.XUnit
        
         #region Configuration
 
-        StudentGradesService serviceUnderTests;
+        StudentGradesAverageService _averageServiceUnderTests;
 
         public StudentsGradesServiceTests()
         {
-            serviceUnderTests = new StudentGradesService();
+            _averageServiceUnderTests = new StudentGradesAverageService();
         }
 
         public static IEnumerable<object[]> GetGradesWithExpectedResults()
@@ -49,7 +49,7 @@ namespace StudentsGrades.Tests.XUnit
         [MemberData(nameof(StudentsGradesServiceTests.GetGradesWithExpectedResults), MemberType = typeof(StudentsGradesServiceTests))]
         public void Calculate_Should_Return_Correct_Results_With_MemberData(List<Grade> gradesList, decimal expectedResult)
         {
-            var result = serviceUnderTests.Calculate(gradesList);
+            var result = _averageServiceUnderTests.Calculate(gradesList);
 
             Assert.Equal(expectedResult, result);
         }
@@ -57,7 +57,7 @@ namespace StudentsGrades.Tests.XUnit
         [ClassData(typeof(StudentsGradesServiceTestsClassData))]
         public void Calculate_Should_Return_Correct_Statuses(List<Grade> gradesList,decimal expectedResult)
         {
-            var result = serviceUnderTests.Calculate(gradesList);
+            var result = _averageServiceUnderTests.Calculate(gradesList);
 
             Assert.Equal(expectedResult, result);
         }
@@ -70,7 +70,7 @@ namespace StudentsGrades.Tests.XUnit
                 new Grade {Value = 4, Weight = 3}
             };
 
-            var result = serviceUnderTests.Calculate(list);
+            var result = _averageServiceUnderTests.Calculate(list);
 
             Assert.Equal(4.4M, result);
         }

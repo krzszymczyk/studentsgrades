@@ -17,18 +17,18 @@ namespace StudentsGrades.Tests.Nunit.Cmd
                 new Grade {Value = 4, Weight = 3}
             };
 
-            var result = serviceUnderTests.Calculate(list);
+            var result = _averageServiceUnderTests.Calculate(list);
 
             Assert.AreEqual(4.4M, result);
         }
 
         #region Configuration
 
-        StudentGradesService serviceUnderTests;
+        StudentGradesAverageService _averageServiceUnderTests;
 
         public StudentsGradesServiceTests()
         {
-            serviceUnderTests = new StudentGradesService();
+            _averageServiceUnderTests = new StudentGradesAverageService();
         }
 
         #endregion
