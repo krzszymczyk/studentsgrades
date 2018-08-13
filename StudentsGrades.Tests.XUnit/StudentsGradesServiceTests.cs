@@ -19,7 +19,40 @@ namespace StudentsGrades.Tests.XUnit
             serviceUnderTests = new StudentGradesService();
         }
 
+        public static IEnumerable<object[]> GetGradesWithExpectedResults()
+        {
+            yield return new object[]
+            {
+                new List<Grade>
+                {
+                    new Grade {Value = 2.75M, Weight = 1},
+                    new Grade {Value = 1.75M, Weight = 1},
+                    new Grade {Value = 2.75M, Weight = 1},
+                },
+                2.4167M
+            };
+            yield return new object[]
+            {
+                new List<Grade>
+                {
+                    new Grade {Value = 2.75M, Weight = 1},
+                    new Grade {Value = 1.75M, Weight = 1},
+                    new Grade {Value = 1.75M, Weight = 1},
+                },
+                2.0833M
+            };
+        }
+
         #endregion
+
+        [Theory]
+        [MemberData(nameof(StudentsGradesServiceTests.GetGradesWithExpectedResults), MemberType = typeof(StudentsGradesServiceTests))]
+        public void Calculate_Should_Return_Correct_Results_With_MemberData(List<Grade> gradesList, decimal expectedResult)
+        {
+            var result = serviceUnderTests.Calculate(gradesList);
+
+            Assert.Equal(expectedResult, result);
+        }
         [Theory]
         [ClassData(typeof(StudentsGradesServiceTestsClassData))]
         public void Calculate_Should_Return_Correct_Statuses(List<Grade> gradesList,decimal expectedResult)
