@@ -13,6 +13,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StudentsGrades.Tests.XUnit"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StudentsGrades.Tests.Nunit.Cmd", "StudentsGrades.Tests.Nunit.Cmd\StudentsGrades.Tests.Nunit.Cmd.csproj", "{3F57A106-5D3F-418C-A52A-FEF42719265D}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "IoCExample", "IoCExample", "{B0CB761E-4ED6-4DFD-B6AB-D048435FD0AC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IocExampleApp", "IocExampleApp\IocExampleApp.csproj", "{EF258E05-B599-46D7-B837-05216DA1F9C0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,6 +39,10 @@ Global
 		{3F57A106-5D3F-418C-A52A-FEF42719265D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3F57A106-5D3F-418C-A52A-FEF42719265D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3F57A106-5D3F-418C-A52A-FEF42719265D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF258E05-B599-46D7-B837-05216DA1F9C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF258E05-B599-46D7-B837-05216DA1F9C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF258E05-B599-46D7-B837-05216DA1F9C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF258E05-B599-46D7-B837-05216DA1F9C0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -43,6 +51,7 @@ Global
 		{F47C27C9-D023-4194-A69F-D4967943A9CB} = {A6A3DE7F-75D1-4CD8-9E3B-2CFB913B42ED}
 		{61DFFF8B-CFC4-4DAA-9DAD-9602C1A4B908} = {A6A3DE7F-75D1-4CD8-9E3B-2CFB913B42ED}
 		{3F57A106-5D3F-418C-A52A-FEF42719265D} = {A6A3DE7F-75D1-4CD8-9E3B-2CFB913B42ED}
+		{EF258E05-B599-46D7-B837-05216DA1F9C0} = {B0CB761E-4ED6-4DFD-B6AB-D048435FD0AC}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1BB44CC0-917E-470C-978D-32B4E86B2836}

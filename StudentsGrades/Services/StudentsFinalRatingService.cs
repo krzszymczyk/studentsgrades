@@ -6,7 +6,7 @@ using StudentsGrades.Models;
 
 namespace StudentsGrades.Services
 {
-    public class StudentsFinalRatingService
+    public class StudentsFinalRatingService : IStudentsFinalRatingService
     {
         private IStudentGradesAverageService studentsGradesAverageService;
 
