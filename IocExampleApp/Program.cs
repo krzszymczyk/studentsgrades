@@ -15,7 +15,7 @@ namespace IocExampleApp
             builder.RegisterAssemblyTypes(studentsGradesAssembly)
                 .Where(s => s.Name.EndsWith("Service"))
                 .AsImplementedInterfaces();
-            //builder.RegisterType<StudentGradesAverageService>().As<IStudentGradesAverageService>();
+           
 
             var container = builder.Build();
 
