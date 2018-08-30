@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using BestStudentsResults.Data.Context;
+using BestStudentsResults.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
@@ -26,6 +27,7 @@ namespace BestStudentsResults
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<StudentResultsDbContext>(opt =>opt.UseSqlServer(Configuration.GetConnectionString("Default")));
+            services.AddScoped<IRatingDbService, RatingDbService>();
             services.AddMvc();
         }
 
