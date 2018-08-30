@@ -33,6 +33,8 @@ namespace BestStudentsResults.Controllers
             _context.StudentsResults.Add(studentResultEntity);
             await _context.SaveChangesAsync();
             return Json(true);
+
+            //10.06 -> następny do obejrzenia
         }
     }
 }
