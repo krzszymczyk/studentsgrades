@@ -37,7 +37,7 @@ namespace StudentsGrades.Tests.XUnit
             //Act
             var result = serviceUnderTests.GetFinalRating(null);
                 //Assert
-            Assert.Equal(1, 2);
+            Assert.Equal(expectedResult, result);
         }
     }
 }
