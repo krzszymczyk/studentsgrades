@@ -8,7 +8,7 @@ using Xunit;
 
 namespace BestStudentsResults.DbTests.Xunit
 {
-    public class RatingDbServiceTests:IClassFixture<InMemoryDbFixture>
+    public class RatingDbServiceInMemoryTests:IClassFixture<InMemoryDbFixture>
     {
         [Fact]
         public async Task AddRating_RecordShouldBeAddedToDb()
@@ -25,13 +25,13 @@ namespace BestStudentsResults.DbTests.Xunit
         private RatingDbService serviceUnderTest;
         private InMemoryDbFixture dbFixture;
 
-        public RatingDbServiceTests(InMemoryDbFixture dbFixture)
+        public RatingDbServiceInMemoryTests(InMemoryDbFixture dbFixture)
         {
             serviceUnderTest = new RatingDbService(dbFixture.DbContext);
 
             this.dbFixture = dbFixture;
         }
-
+        //skoñczone na 12.02 -> nastêpny 12.03 test na sqlserver
         #endregion
 
     }
